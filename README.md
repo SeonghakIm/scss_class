@@ -67,3 +67,15 @@ repeat에서도 2번째 parameter 값 뒤에 [이름]을 붙이는 것으로 라
 note: 뒤에 붙이면 끝부터 이름이 붙어서 repeat 시작 line은 이름이 없다! 앞에 붙여야 시작 line부터 이름이 다 붙음
 
 ※flex는 1차원, grid는 2차원
+
+2.7
+fr은 fraction, fraction은 사용 가능한 공간을 뜻함
+공간을 가질 수 있을 만큼 가진다.
+navigatior가 아닌 grid container에서 fr을 얻는게 굉장히 중요하다고 한다.
+상대좌표의 느낌(px보다 훨씬 유연하다)
+row와 colum을 동시에 fr을 하면 왜 사라질까?
+수직 방향은 height를 지정해주어야한다.
+vh는 내 화면의 n% 정도를 의미한다.
+즉 vh도 상대좌표이다!!
+grid-template로 많은 것들을 통합할 수 있다.
+grid-template에서 repeat은 작동하지 않는다.
