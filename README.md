@@ -16,3 +16,13 @@ flexbox는 width를 신경쓰지 않고 child들을 같은 줄에 있도록 만�
 flex-wrap의 기본 값은 nowrap
 wrap일 경우 flexbox에게 child의 크기를 유지하라고 함
 box사이 공간(cross axis에 있는 line)은 align-content로 조절할 수 있다.
+
+1.6
+flex-grow, flex-shrink는 child에게 줄 수 있는 property
+flex-wrap이 nowrap일 때 width를 무시하고 box가 찌그러지는데, 어느 박스가 찌그러질지 이제 명령할 수 있다.
+flex-shrink의 기본 값은 1
+flex-shrink의 값이 n이 되면 다른 box들보다 n배 더 많이 찌그러진다.
+flex-grow의 기본 값은 1
+flex-grow는 n만큼의 지분으로 여분의 main axis의 공간을 가져옴!
+경쟁자가 있을 경우 각자 n/sum의 지분으로 여분 공간을 가져감
+반응형 디자인을 할 때 유용함

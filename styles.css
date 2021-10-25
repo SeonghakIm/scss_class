@@ -1,18 +1,27 @@
 .father{
     display:flex;
+    flex-direction: low;
     /*main axis */
     justify-content: space-around;
     height: 100vh;
-    flex-wrap: wrap;
     align-content:space-around;
 }
 
 .child{
     width: 200px;
     height: 200px;
-    background-color: black;
+    background-color: greenyellow;
     color:white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.child:nth-child(2){
+    background-color: mediumpurple;
+    flex-grow: 1
+}
+
+.child:nth-child(3){
+    flex-grow: 2
 }
