@@ -3,25 +3,16 @@
     /*main axis */
     justify-content: space-around;
     height: 100vh;
+    flex-wrap: wrap;
+    align-content:space-around;
 }
 
 .child{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: black;
     color:white;
-    align-self: auto;
-}
-
-.child:nth-child(1){
-    order : 0;
-}
-
-.child:nth-child(2){
-    align-self: center;
-    order : 1;
-}
-
-.child:nth-child(3){
-    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
