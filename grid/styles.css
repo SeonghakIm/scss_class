@@ -1,18 +1,30 @@
-.father{
+.grid{
     display:grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 250px 250px 250px;
-    gap: 10px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 50px repeat(2, 100px) 50px;
+    grid-template-areas: 
+    "header header header header"
+    "content content . nav"
+    "content content . nav"
+    "footer footer footer footer";
 }
 
-.child{
+.header{
     background-color: greenyellow;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-area: header;
 }
 
-.child:nth-child(2){
+.content{
     background-color: mediumpurple;
+    grid-area: content;
+}
+
+.nav{
+    background-color: mediumturquoise;
+    grid-area: nav;
+}
+
+.footer{
+    background-color: mediumvioletred;
+    grid-area: footer;
 }

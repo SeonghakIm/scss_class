@@ -38,3 +38,10 @@ grid-template-columns는 일단 절대좌표(px)로 grid 내부의 공간(세로
 grid-template-rows는 일단 절대좌표(px)로 grid 내부의 공간(세로축)의 크기를 조절한다.
 grid block 사이의 간격은 column-gap, row-gap으로 나누어 지정하거나 아니면 둘 모두를 gap으로 조절할 수 있다.
 ※ 앞으로 추가될 모든 block들의 크기를 지정하고 싶을 때는 어떻게 할까?
+
+2.3
+repeat을 사용하면 반복해서 절대좌표를 적어줄 필요가 없다.
+grid-template-areas로 element들이 template의 어느 장소에 위치할지 지정할 수 있다.
+grid-template-areas로 element의 이름을 인식하게 하려면 element마다 grid-area를 지정해주어야 한다.
+class name은 아무것도 하지 않음!
+.으로 template-area의 공간을 비워둘 수 있다.
