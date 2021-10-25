@@ -59,3 +59,11 @@ grid-column : x / y로 grid-column-start와 grid-column-end를 축약할 수 있
 -2는 끝의 전을 뜻하며, -n은 끝의 n - 1 전을 뜻함
 span n은 n칸을 차지함을 의미함
 span n / y 등으로 시작점 등을 표시해줄 수 있다.
+
+2.6
+라인 이름 붙이기
+grid-template-columns등에서 px값 앞에 [이름]을 붙이는 것으로 라인의 이름을 정할 수 있다.
+repeat에서도 2번째 parameter 값 뒤에 [이름]을 붙이는 것으로 라인들의 이름을 정해줄 수 있다.
+note: 뒤에 붙이면 끝부터 이름이 붙어서 repeat 시작 line은 이름이 없다! 앞에 붙여야 시작 line부터 이름이 다 붙음
+
+※flex는 1차원, grid는 2차원
