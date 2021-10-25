@@ -31,3 +31,10 @@ flex-grow는 n만큼의 지분으로 여분의 main axis의 공간을 가져옴!
 flex-basis는 width와 유사(default가 low인 main axis에서 작용하기 때문!)
 element의 처음 값을 줌
 찌그러지거나 늘어나기 전에는 element의 값이 flex-basis의 값을 유지함
+
+2.2 
+grid도 flex와 같이 father가 관리한다.
+grid-template-columns는 일단 절대좌표(px)로 grid 내부의 공간(세로축)의 크기를 조절한다.
+grid-template-rows는 일단 절대좌표(px)로 grid 내부의 공간(세로축)의 크기를 조절한다.
+grid block 사이의 간격은 column-gap, row-gap으로 나누어 지정하거나 아니면 둘 모두를 gap으로 조절할 수 있다.
+※ 앞으로 추가될 모든 block들의 크기를 지정하고 싶을 때는 어떻게 할까?
