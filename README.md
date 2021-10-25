@@ -45,3 +45,10 @@ grid-template-areas로 element들이 template의 어느 장소에 위치할지 �
 grid-template-areas로 element의 이름을 인식하게 하려면 element마다 grid-area를 지정해주어야 한다.
 class name은 아무것도 하지 않음!
 .으로 template-area의 공간을 비워둘 수 있다.
+auto는 가능한 만큼 큰 공간을 가져가고 그 다음 절대 좌표가 온다.
+
+2.4
+grid-column-start와 grid-column-end에 들어가는 숫자는 line을 뜻함
+gap을 주어 line의 위치를 확인할 수 있음
+grid-column-start와 grid-row-start를 조절함으로써 html의 변경없이 element의 위치를 조절할 수 있다.
+element를 늘임으로써 2.3과 비슷한 레이아웃을 만들 수 있다.
