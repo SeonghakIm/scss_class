@@ -1,13 +1,16 @@
 .wrapper{
     display:flex;
-    justify-content: space-around;
+    flex-direction: column;
+    /*main axis */
+    justify-content: center;
+    /* cross axis*/
     align-items: center;
-    height: 100vh;
+    height: 200vh;
 }
 
 .box{
-    width:200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: black;
     color:white;
 }
