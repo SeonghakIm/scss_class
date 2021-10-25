@@ -52,3 +52,10 @@ grid-column-start와 grid-column-end에 들어가는 숫자는 line을 뜻함
 gap을 주어 line의 위치를 확인할 수 있음
 grid-column-start와 grid-row-start를 조절함으로써 html의 변경없이 element의 위치를 조절할 수 있다.
 element를 늘임으로써 2.3과 비슷한 레이아웃을 만들 수 있다.
+
+2.5
+grid-column : x / y로 grid-column-start와 grid-column-end를 축약할 수 있다.
+-1은 끝을 뜻함
+-2는 끝의 전을 뜻하며, -n은 끝의 n - 1 전을 뜻함
+span n은 n칸을 차지함을 의미함
+span n / y 등으로 시작점 등을 표시해줄 수 있다.
