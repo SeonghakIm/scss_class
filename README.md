@@ -26,3 +26,8 @@ flex-grow의 기본 값은 1
 flex-grow는 n만큼의 지분으로 여분의 main axis의 공간을 가져옴!
 경쟁자가 있을 경우 각자 n/sum의 지분으로 여분 공간을 가져감
 반응형 디자인을 할 때 유용함
+
+1.7
+flex-basis는 width와 유사(default가 low인 main axis에서 작용하기 때문!)
+element의 처음 값을 줌
+찌그러지거나 늘어나기 전에는 element의 값이 flex-basis의 값을 유지함

@@ -1,6 +1,5 @@
 .father{
     display:flex;
-    flex-direction: low;
     /*main axis */
     justify-content: space-around;
     height: 100vh;
@@ -8,8 +7,7 @@
 }
 
 .child{
-    width: 200px;
-    height: 200px;
+    flex-basis:30%;
     background-color: greenyellow;
     color:white;
     display: flex;
@@ -19,9 +17,5 @@
 
 .child:nth-child(2){
     background-color: mediumpurple;
-    flex-grow: 1
-}
-
-.child:nth-child(3){
-    flex-grow: 2
+    flex-grow: 1;
 }
