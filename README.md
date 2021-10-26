@@ -108,3 +108,8 @@ grid-auto-flow는 특수한 케이스로, item들이 추가되었을 때 어떤 
 minmax의 사용 이유: 어떤 element가 가능한한 엄청 크길 바라면서, 어느 정도 이하로 작아지는 것을 바라지는 않을 때
 minmax(min,max)로 사용할 수 있다.
 min 이하로 작아지지 않고, max 이상으로 커지지 않는다.
+
+2.12 auto-fit과 auto-fill을 이용해 쉽게 반응형 디자인을 할 수 있고 이는 repeat에서 사용된다.
+auto-fill은 column이 비어있더라도 column들이 들어갈 수 있는 자리에 최대한 많은 공간을 제공한다(빈 column 발생)
+auto-fit은 element들을 stretch하여 공간에 딱 맞게 해준다.
+모두 화면이 작을 때는 같이 동작하나, 화면이 늘어날 때 달리 작동한다.
