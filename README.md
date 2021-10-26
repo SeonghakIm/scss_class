@@ -120,3 +120,50 @@ min-content는 content를 가능한한 작게
 max-content는 content를 가능한한 크게 하는 것이다
 max-content는 텍스트의 끝까지 확장됨
 min-content의 기준은 가장 긴 단어의 width라고 하는데 잘 모르겠다(text의 경우)
+
+3.0
+SCSS는 compile 결과 CSS가 된다!
+SCSS는 processer의 일종
+Sass라는 것과 거의 비슷하다. 약간의 syntax 차이가 있음
+
+3.1
+variable은 website에서 가장 중요한 color나 중요한 style등을 저장하고 싶을 때 씀
+파일명 앞의 _는 css로 변환되지 않았으면 하는 파일 표시!
+
+변수 생성법은 $x: n;
+
+nesting은 타깃하는 element를 더 간결하게 지정해줌
+
+예컨대
+
+.box {
+    a
+}
+.box smallbox{
+    b
+}
+가 있으면
+
+.box{
+    a
+    smallbox{
+        b
+    }
+}
+로 같은 효과를 줄 수 있음
+
+또 다른 예로
+
+.box:hover{
+    a
+}
+
+를
+
+.box{
+    &:hover{
+        a
+    }
+}
+
+와 같이 표기할 수 있다.

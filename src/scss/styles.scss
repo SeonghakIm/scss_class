@@ -1,0 +1,28 @@
+@import "_variables";
+
+body{
+  background: $bg;
+}
+
+h2{
+  color: red;
+  font-size: $title;
+}
+.box{
+  margin-top: 20px;
+  &:hover{
+    background-color: rgb(8, 10, 4);
+  }
+  h2{
+    color: blue;
+  }
+  button{
+    color: yellowgreen;
+    &:hover{
+      color: black;
+    }
+  }
+}
+
+
+
