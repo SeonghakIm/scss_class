@@ -103,3 +103,8 @@ align-self와 justify-self가 존재! child에게 개별 적용되는 것을 제
 그럴 때는 grid-auto-rows, grid-auto-columns이 해결책이 될 수 있다.
 grid-auto-flow는 특수한 케이스로, item들이 추가되었을 때 어떤 방향으로 grid가 확장될지를 결정한다.
 적용방식이 flexbox-direction과 유사하다.
+
+2.11
+minmax의 사용 이유: 어떤 element가 가능한한 엄청 크길 바라면서, 어느 정도 이하로 작아지는 것을 바라지는 않을 때
+minmax(min,max)로 사용할 수 있다.
+min 이하로 작아지지 않고, max 이상으로 커지지 않는다.
