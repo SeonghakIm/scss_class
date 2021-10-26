@@ -87,3 +87,8 @@ align-items는 세로축 담당
 child의 크기가 지정된 상태에서는 stretch가 적용되지 않는다.
 place-items: y x로 justify-items와 align-items를 함께 할 수 있다.
 첫번째가 수직방향임에 주의
+
+2.9
+place-items는 개별 아이템에 적용
+place-content는 전체 grid(틀)에 적용
+justify-content, align-content, place-content가 모두 존재함
