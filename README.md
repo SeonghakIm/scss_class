@@ -92,3 +92,14 @@ place-items: y x로 justify-items와 align-items를 함께 할 수 있다.
 place-items는 개별 아이템에 적용
 place-content는 전체 grid(틀)에 적용
 justify-content, align-content, place-content가 모두 존재함
+
+2.10
+align-self와 justify-self가 존재! child에게 개별 적용되는 것을 제외하면 똑같다.
+.item*20>{$}
+.은 div class name을 뜻함 여기서 name은 item
+*20은 20개 생성
+>{$}는 숫자를 표시해줌을 뜻함
+만약 그리드 내에서 지정해준 cell보다 데이터의 cell이 많을 수도 있다.
+그럴 때는 grid-auto-rows, grid-auto-columns이 해결책이 될 수 있다.
+grid-auto-flow는 특수한 케이스로, item들이 추가되었을 때 어떤 방향으로 grid가 확장될지를 결정한다.
+적용방식이 flexbox-direction과 유사하다.
