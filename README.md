@@ -79,3 +79,11 @@ vh는 내 화면의 n% 정도를 의미한다.
 즉 vh도 상대좌표이다!!
 grid-template로 많은 것들을 통합할 수 있다.
 grid-template에서 repeat은 작동하지 않는다.
+
+2.8
+justify-items는 default값이 stretch이며 콘테이너가 모든 grid자식을 가지고 그것들을 늘여 콘테이너 자신을 채움을 뜻함(가로축)
+start는 grid의 처음부터 채움. center는 중앙부터 채움. 나머지는 응용
+align-items는 세로축 담당
+child의 크기가 지정된 상태에서는 stretch가 적용되지 않는다.
+place-items: y x로 justify-items와 align-items를 함께 할 수 있다.
+첫번째가 수직방향임에 주의

@@ -4,28 +4,23 @@
     grid-template-rows: repeat(4,  1fr); 
     gap: 5px;
     height: 100vh;
-    grid-template:
-        "header header header header" 1fr
-        "content content content nav" 2fr
-        "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr
-    ;
+    place-items: center end;
 }
 
 .header{
     background-color: greenyellow;
-    grid-area: header;
 }
 
 .content{
     background-color: mediumpurple;
-    grid-area: content;
+
 }
 .nav{
     background-color: mediumturquoise;
-    grid-area: nav;
+
 }
 
 .footer{
     background-color: mediumvioletred;
-    grid-area: footer;
+
 }
