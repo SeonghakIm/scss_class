@@ -1,24 +1,29 @@
-$minphone: 500px;
-$maxphone: 699px;
-$minpad: $minphone + 1;
-$maxpad: 1120px;
-$minpc: 1121px;
-$maxpc: 1920px;
+$min1: 1200px;
+$min2: 822px;
 
-@mixin responsive($device) {
-    @if $device == 'phone'{
-        @media screen and (min-width: $minphone) and (max-width: $maxphone){
+$header1: 600px;
+$header2: 420px;
+
+
+@mixin responsive($size) {
+    @if $size == 'big'{
+        @media screen and (min-width: $min1){
             @content;
         }
     }
-    @else if $device == 'pad'{
-        @media screen and (max-width: $maxpad) and (min-width: $minpad) and (orientation: landscape){
+    @else if $size == 'middle'{
+        @media screen and (min-width: $min2 + 1) and (max-width: $min1 - 1) and (orientation: landscape){
             @content;
         }
     }
-    @else if $device == 'pc'{
-        @media screen and (max-width: $maxpc) and (min-width: $minpc) and (orientation: landscape){
+    @else if $size == 'small'{
+        @media screen and (max-width: $min2) and (orientation: landscape){
             @content;
         }
     }
+}
+
+@mixin common($color){
+    font-family: RingsideExtraWide,Blank,Helvetica Neue,Helvetica,sans-serif;
+    color: $color;
 }
