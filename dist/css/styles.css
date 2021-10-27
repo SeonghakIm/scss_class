@@ -1,1 +1,1 @@
-body{background:green}h2{color:red;font-size:32px}.box{margin-top:20px}.box:hover{background-color:#080a04}.box h2{color:#00f}.box button{color:#9acd32}.box button:hover{color:#000}
+a{margin-bottom:10px}a:nth-child(even),a:nth-child(odd){text-decoration:none;display:block;color:#00f}a:nth-child(even):hover,a:nth-child(odd):hover{color:green}a:nth-child(even){color:red}

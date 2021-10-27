@@ -167,3 +167,8 @@ nesting은 타깃하는 element를 더 간결하게 지정해줌
 }
 
 와 같이 표기할 수 있다.
+
+3.2
+
+mixins는 scss functionality를 재사용할 수 있게 해준다
+mixin은 함수 호출 처럼 사용할 수 있고, 변수도 사용할 수 있다.
