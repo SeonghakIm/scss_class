@@ -1,45 +1,78 @@
 @import "_variables";
 @import "_mixins";
 @import "_extends";
+
+body{
+  background-color: whitesmoke;
+}
 .entire{
+  display:grid;
   @include responsive("big"){
-    display:grid;
+    font-size:150%;
     grid-template-columns: 600px 1fr;
+    grid-template-areas:"header body";
   }
   @include responsive("middle"){
-    display:grid;
+    font-size:125%;
     grid-template-columns: 420px 1fr;
+    grid-template-areas:"header body";
   }
   @include responsive("small"){
-    display:grid;
+    font-size:100%;
     grid-template-columns: 1fr;
+    grid-template-areas:"header body";
   }
+
+}
+.interior_header{
+  grid-area: header;
+  padding: 72px;
 }
 h1{
-  font-size: 5rem;
+  font-size:3.0em;
   text-transform: uppercase;
   transform: translateX(-0.1em);
   @include common($myred);
 }
 
-h2{
-  @include common($myred);
-  font-size: 1.6em;
-}
 
 p{
   &:nth-child(1){
-    @include common($myred);
+    @include common(tomato);
   }
   &:nth-child(2){
     @include common(black);
+  }
+  &:nth-child(3){
+    @include common(black);
+    font-size: 0.7em;
   }
 }
 
 .buttons{
   display:flex;
+  flex-wrap: wrap;
+  @include responsive("big"){
+    width: 365px;
+  }
+  @include responsive("middle"){
+    width:270px;
+  }
+  @include responsive("small"){
+    grid-template-columns: 1fr;
+  }
 }
 
 a{
+  color: #949491;
   margin: 0 1em 0.25em 0;
+  &:hover{
+    color: black;
+  }
+}
+
+.interior_body {
+  height:1000px;
+  background-color: tomato;
+  grid-area: body;
 }
