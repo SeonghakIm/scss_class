@@ -1,22 +1,24 @@
-@mixin title{
-    color: blue;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
+$minphone: 500px;
+$maxphone: 699px;
+$minpad: $minphone + 1;
+$maxpad: 1120px;
+$minpc: 1121px;
+$maxpc: 1920px;
 
-@mixin link($word){
-    text-decoration: none;
-    display: block;
-    @if $word == 'odd'{
-        color: blue;
+@mixin responsive($device) {
+    @if $device == 'phone'{
+        @media screen and (min-width: $minphone) and (max-width: $maxphone){
+            @content;
+        }
     }
-    @else if $word == 'even'{
-        color: red;
+    @else if $device == 'pad'{
+        @media screen and (max-width: $maxpad) and (min-width: $minpad) and (orientation: landscape){
+            @content;
+        }
     }
-    @else{
-        color: $word;
-    }
-    &:hover{
-        color: green;
+    @else if $device == 'pc'{
+        @media screen and (max-width: $maxpc) and (min-width: $minpc) and (orientation: landscape){
+            @content;
+        }
     }
 }

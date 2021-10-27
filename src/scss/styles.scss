@@ -1,14 +1,16 @@
 @import "_variables";
 @import "_mixins";
+@import "_buttons";
 
-a {
-  margin-bottom: 10px;
-  &:nth-child(odd){
-    @include link('odd');
+h1{
+  color: red;
+  @include responsive("phone"){
+    color: yellow;
   }
-
-  &:nth-child(even){
-    @include link('even');
-    
+  @include responsive("pad"){
+    font-size: 100px;
+  }
+  @include responsive("pc"){
+    color: green;
   }
 }

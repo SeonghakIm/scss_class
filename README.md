@@ -169,6 +169,17 @@ nesting은 타깃하는 element를 더 간결하게 지정해줌
 와 같이 표기할 수 있다.
 
 3.2
-
 mixins는 scss functionality를 재사용할 수 있게 해준다
 mixin은 함수 호출 처럼 사용할 수 있고, 변수도 사용할 수 있다.
+앞에 @를 적는 것으로 if문 등도 사용할 수 있다.
+@mixin으로 정의하고 @include로 사용한다.
+
+3.3
+extends는 같은 코드를 반복하여 적고 싶지 않을 때 사용
+%로 extend의 base가 되는 기능을 만들 수 있다.
+@extend로 만들어진 기능을 가져와 사용할 수 있다.
+mixin은 변수에 따라 달라지는 기능을 사용할 때, extend는 대부분 같은 기능을 공유할 때 쓴다.
+
+3.4
+mixin에는 content라는 키워드가 있다.
+mixin 내부에 content가 있고 include의 사용처에서 mixin 내부에 뭔가를 추가하면 mixin에도 그것이 추가된다.
